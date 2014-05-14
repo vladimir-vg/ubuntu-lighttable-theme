@@ -1,0 +1,102 @@
+:root {
+  /* just copied ubuntu brand colors:
+     http://design.ubuntu.com/brand/colour-palette */
+  var-ubuntu-orange: #DD4814;
+  var-light-aubergine: #77216F;
+  var-mid-aubergine: #5E2750;
+  var-dark-aubergine: #2C001E;
+  var-warm-grey: #AEA79F;
+  var-cool-grey: #333333;
+  var-canonical-aubergine: #772953;
+
+  /* colors modifications */
+  var-ubuntu-orange-l10: #F7622E;
+  var-ubuntu-orange-l20: #FF7B47;
+  var-ubuntu-orange-d10: #C42F00;
+  var-ubuntu-orange-d20: #AA1500;
+
+  var-dark-aubergine-l10: #461A38;
+  var-dark-aubergine-l20: #5F3351;
+
+  var-light-aubergine-l10: #913B89;
+  var-light-aubergine-l20: #AA54A2;
+  var-light-aubergine-l30: #C46EBC;
+  var-light-aubergine-l40: #DD87D5;
+
+  var-mid-aubergine-l10: #78416A;
+  var-mid-aubergine-l20: #915A83;
+
+  var-warm-grey-l10: #C8C1B9;
+
+  var-cool-grey-l10: #4D4D4D;
+  var-cool-grey-l20: #666666;
+  var-cool-grey-l30: #808080;
+}
+
+#multi.theme-ubuntu .tabset .list .active { color:var(placeholder-fg); }
+#multi.theme-ubuntu .tabset.active .list .active { color:var(highlight-fg); }
+#multi.theme-ubuntu .tabset.active .list .dirty { color:var(accent-foreground); }
+
+.cm-s-ubuntu { background: var(dark-aubergine); color: var(warm-grey-l10); }
+
+.cm-s-ubuntu span.cm-bracket {color: var(warm-grey-l10);}
+.cm-s-ubuntu span.cm-bracket1 {color: var(warm-grey-l10); }
+.cm-s-ubuntu span.cm-bracket2 {color: #9B932A;}
+.cm-s-ubuntu span.cm-bracket3 {color: #E7B976;}
+.cm-s-ubuntu span.cm-bracket4 {color: #D86E89;}
+.cm-s-ubuntu span.cm-bracket5 {color: #5E86AC;}
+.cm-s-ubuntu span.cm-bracket6 {color: #5BB28F;}
+.cm-s-ubuntu span.cm-bracket7 {color: var(warm-grey-l10);}
+.cm-s-ubuntu span.cm-bracket8 {color: #9B932A;}
+.cm-s-ubuntu span.cm-bracket9 {color: #E7B976;}
+.cm-s-ubuntu span.cm-bracket10 {color: #D86E89;}
+.cm-s-ubuntu span.cm-bracket11 {color: #5E86AC;}
+.cm-s-ubuntu span.cm-bracket12 {color: #5BB28F;}
+.cm-s-ubuntu span.cm-bracket0, .cm-s-ubuntu span.cm-bracket-mismatched { color:white; background:var(ubuntu-orange); }
+
+.cm-s-ubuntu span.cm-symbol {color: var(warm-grey-l10);}
+.cm-s-ubuntu span.cm-variable {color: var(warm-grey-l10);}
+.cm-s-ubuntu span.cm-variable-2 {color: var(light-aubergine-l10); }
+.cm-s-ubuntu span.cm-string {color: var(cool-grey-l20)}
+.cm-s-ubuntu span.cm-string-2 {color: var(cool-grey-l20);}
+.cm-s-ubuntu span.cm-number {color: var(ubuntu-orange);}
+.cm-s-ubuntu span.cm-def {color:var(light-aubergine-l30);}
+.cm-s-ubuntu span.cm-builtin {color: var(light-aubergine-l30);}
+.cm-s-ubuntu span.cm-header {color: var(ubuntu-orange);}
+.cm-s-ubuntu span.cm-property {color: var(warm-grey-l20); }
+.cm-s-ubuntu span.cm-operator {color: var(warm-grey-l10); }
+.cm-s-ubuntu span.cm-keyword {color: var(ubuntu-orange); }
+.cm-s-ubuntu span.cm-qualifier {color: var(light-aubergine-l30); }
+.cm-s-ubuntu span.cm-attribute {color: var(light-aubergine-l30); }
+.cm-s-ubuntu span.cm-meta {color: var(ubuntu-orange); }
+.cm-s-ubuntu span.cm-atom { color: var(light-aubergine-l30); }
+.cm-s-ubuntu span.cm-tag {color: white;}
+.cm-s-ubuntu span.cm-comment { color: var(mid-aubergine); }
+
+.cm-s-ubuntu span.CodeMirror-searching { background: #aaa; color:black; }
+.cm-s-ubuntu span.CodeMirror-searching-active { background: #afa; color:black; }
+
+.cm-s-ubuntu .CodeMirror-selected { background: var(dark-aubergine-l10); }
+.cm-s-ubuntu .CodeMirror-focused .CodeMirror-selected { background: var(dark-aubergine-l20); }
+
+.cm-s-ubuntu .CodeMirror-activeline { background:#303030; }
+.cm-s-ubuntu span.CodeMirror-matchingbracket {box-sizing:border-box; background:transparent; border-bottom:1px solid var(ubuntu-orange); font-weight:normal;}
+.cm-s-ubuntu span.CodeMirror-nonmatchingbracket {color: red; border-bottom:1px solid #F33; background:none;}
+
+.cm-s-ubuntu .cm-searching { background:var(ubuntu-orange); border-radius:2px; color:white !important; }
+.cm-s-ubuntu .searching-current { background:var(light-aubergine); color:white !important; }
+
+.CodeMirror div.CodeMirror-cursor { border-left: 1px solid white; }
+/* Shown when moving in bi-directional text */
+.CodeMirror div.CodeMirror-secondarycursor { border-left: 1px solid silver; }
+.CodeMirror.cm-keymap-fat-cursor div.CodeMirror-cursor { width: auto; border: none !important; background: rgba(0, 200, 200, .4); }
+
+.CodeMirror-gutters { background: var(multi); border-color: var(dark-highlight-bg); border:none; }
+.cm-s-ubuntu .CodeMirror-activeline .CodeMirror-linenumber { color:var(blinding-fg); }
+
+.CodeMirror-hints { position: absolute; z-index: 1000000000000000; overflow: hidden; list-style: none;  margin: 0; padding: 2px;  border-radius: 2px; border: 1px solid var(pane-bg);  background: var(pane-bg); font-size: 90%; font-family: inherit;  max-height: 20em; }
+.CodeMirror-hints ul { overflow-y:auto; max-height:20em; }
+.CodeMirror-hints ul li { margin: 0; padding: 0 4px; border-radius: 2px; max-width: 60em; overflow: hidden; white-space: pre; color: var(warm-grey-l10); cursor: pointer; }
+.CodeMirror-hints input { display:none; }
+.CodeMirror-hints .selected { background: var(highlight-bg); color: var(highlight-fg); }
+.CodeMirror-hints ul::-webkit-scrollbar-thumb { background: var(scrollbar); border-color: var(scrollbar); }
