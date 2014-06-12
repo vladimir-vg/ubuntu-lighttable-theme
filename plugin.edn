@@ -3,4 +3,4 @@
  :author "Gordeev Vladimir"
  :source "https://github.com/vladimir-vg/ubuntu-lighttable-theme"
  :desc "Theme based on Ubuntu brand colors (http://design.ubuntu.com/brand/colour-palette)"
- :behaviors "ubuntu_theme.behaviors"}
+ :behaviors "ubuntu-theme.behaviors"}
